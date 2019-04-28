@@ -1,5 +1,7 @@
 :root {
   --navbar-height: 70px;
+  --color-strong: #B7999C;
+  --color-light: #DFE0E2;
 }
 
 body {
@@ -15,12 +17,13 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  background: #5603AD88;
+  background: #B7999C44;
+
 }
 
 /* navbar */
 .navbarStyle {
-  background: #5603AD;
+  background: var(--color-strong);
   width: 100%;
   height: var(--navbar-height);
   margin: 0;
@@ -49,7 +52,7 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-  color: #F0FFF1;
+  color: var(--color-light);
 }
 
 /***********************/
@@ -63,6 +66,10 @@ a:active {
   margin-top: calc(-1 * var(--navbar-height));
 }
 
+.bottomMarginOffset {
+  margin-bottom: calc(-1 * var(--navbar-height));
+}
+
 .vPortHeight {
   min-height: calc(100vh - var(--navbar-height));
 }
@@ -74,15 +81,16 @@ a:active {
 
 #welcome-section-inner {
   display: flex;
-  background: linear-gradient(180deg, #fff0, #C2F8CB);
+  background: linear-gradient(180deg, #fff0, var(--color-light));
 }
 
 #welcome-title {
   margin: auto;
   text-transform: uppercase;
   text-align: center;
-  color: #5603AD;
+  color: var(--color-light);
 }
+
 
 #image-me {
   border-radius: 50%;
@@ -121,11 +129,16 @@ a:active {
 
 #projects-inner {
   width: 100%;
-  background: #8367C7;
+  background: var(--color-strong);
   min-height: 100vh;
 }
 
-#external-links {
-  width: 100%;
-  background: #B3E9C7;
+#external-links-inner {
+  height: 100vh - calc(2 * var(--navbar-height));
+  background: #DFE0E2;
+}
+
+footer {
+  background: var(--color-strong);
+  height: var(--navbar-height);
 }
