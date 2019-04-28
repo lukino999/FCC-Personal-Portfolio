@@ -10,7 +10,6 @@ body {
   background-size: cover;
 }
 
-
 .backgroundOverlay {
   margin: 0;
   padding: 0;
@@ -52,15 +51,10 @@ a:hover,
 a:active {
   color: #fff;
 }
+
 /***********************/
 
 /**/
-.topOffsetDiv {
-  width: 100%;
-  height: var(--navbar-height);
-  /*background: #0f0;*/
-}
-
 .topPaddingOffset {
   padding-top: var(--navbar-height);
 }
@@ -73,14 +67,13 @@ a:active {
   min-height: calc(100vh - var(--navbar-height));
 }
 
+
 #welcome-section {
   min-height: 100vh;
 }
 
 #welcome-section-inner {
   display: flex;
-  justify-content: center;
-  align-content: center;
   background: linear-gradient(180deg, #fff0, #ffff);
 }
 
@@ -136,5 +129,3 @@ a:active {
   width: 100%;
   background: #fff;
 }
-
-
