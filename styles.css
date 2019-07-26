@@ -65,6 +65,10 @@ a:active {
   margin-top: calc(-1 * var(--navbar-height));
 }
 
+.topMarginOffsetDbl {
+  margin-top: calc(-2 * var(--navbar-height));
+}
+
 .bottomMarginOffset {
   margin-bottom: calc(-1 * var(--navbar-height));
 }
@@ -74,7 +78,7 @@ a:active {
 }
 
 .vPortHeightRed {
-  min-height: calc(100vh - calc(2*var(--navbar-height)));
+  min-height: calc(100vh - calc(2 * var(--navbar-height)));
 }
 
 
@@ -205,13 +209,39 @@ a:active {
 }
 
 
-
 /* externa links */
 #external-links-inner {
   height: 100vh - calc(3 * var(--navbar-height));
   background: #DFE0E2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
+#external-links-inner h1 {
+  text-align: center;
+  /*margin: auto;*/
+  color: var(--color-strong);
+  font-size: 300%;
+  text-transform: uppercase;
+}
+
+.linkContainer {
+  display: flex;
+  justify-content: center;
+  height: 20%;
+  text-align: center;
+  font-size: 500%;
+  /*margin: auto;*/
+}
+
+.linkContainer a i {
+  color: var(--color-strong);
+  padding: 15% .8em 0;
+}
+
+
+/* footer */
 footer {
   background: var(--color-strong);
   height: calc(2 * var(--navbar-height));
