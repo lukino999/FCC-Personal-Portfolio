@@ -9,9 +9,6 @@
 body {
   font-family: sans-serif;
   margin: 0;
-  /*
-  https://drive.google.com/open?id=1H0mBxj4H2VgzHE4RRo47E5c1VGEYcVQD
-  */
   background-image: url("https://drive.google.com/thumbnail?id=1H0mBxj4H2VgzHE4RRo47E5c1VGEYcVQD&sz=w1920");
   background-attachment: fixed;
   background-size: cover;
@@ -248,6 +245,17 @@ a:active {
 footer {
   background: var(--color-strong);
   height: calc(2 * var(--navbar-height));
+  position: relative;
+}
+
+footer div {
+  margin: auto;
+  padding-top: 20px;
+}
+
+footer div p {
+  color: var(--color-light);
+  text-align: center;
 }
 
 
