@@ -1,7 +1,7 @@
 # FCC-Personal-Portfolio
 FreeCodeCamp Responsive Web Design assignment.
 
-This assignment was supposed to be written using plain HTML CSS (no libraries) as it is intended as an excercise on the topic studied this far.
+This assignment was supposed to be written using plain HTML CSS (no libraries) as it is intended as an excercise on the topics studied this far.
 
 In order to complete the challenge the project has to pass the tests on the suite available clicking on the hamburger menu.
 
